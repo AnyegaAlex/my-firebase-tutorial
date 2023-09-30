@@ -7,5 +7,15 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
+
+  module: { 
+    rules: [
+      {
+        test:/ \.index.js$/ ,use: [{loader:"style-loader"}
+        ]
+      }
+    
+    ]
+  },
   watch: true
 }
